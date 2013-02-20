@@ -1,0 +1,15 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": "[{\n        manufacturer: 'Porsche',\n        model: '911',\n        price: 135000,\n        wiki: 'http://en.wikipedia.org/wiki/Porsche_997',\n        img: '2004_Porsche_911_Carrera_type_997.jpg'\n    },{\n        manufacturer: 'Nissan',\n        model: 'GT-R',\n        price: 80000,\n        wiki:'http://en.wikipedia.org/wiki/Nissan_Gt-r',\n        img: '250px-Nissan_GT-R.jpg'\n    },{\n        manufacturer: 'BMW',\n        model: 'M3',\n        price: 60500,\n        wiki:'http://en.wikipedia.org/wiki/Bmw_m3',\n        img: '250px-BMW_M3_E92.jpg'\n    },{\n        manufacturer: 'Audi',\n        model: 'S5',\n        price: 53000,\n        wiki:'http://en.wikipedia.org/wiki/Audi_S5#Audi_S5',\n        img: '250px-Audi_S5.jpg'\n    },{\n        manufacturer: 'Audi',\n        model: 'TT',\n        price: 40000,\n        wiki:'http://en.wikipedia.org/wiki/Audi_TT',\n        img: '250px-2007_Audi_TT_Coupe.jpg'\n    }]",
+        "model": "Car",
+        "storeId": "cars",
+        "designer|userClassName": "Cars"
+    },
+    "designerId": "b3c2913e-1042-4e17-a52f-62eaf05b760f"
+}

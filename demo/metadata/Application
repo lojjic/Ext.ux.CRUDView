@@ -1,0 +1,41 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Person",
+            "Car"
+        ],
+        "stores": [
+            "People",
+            "Cars"
+        ],
+        "views": [
+            "Main"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "Ext.Loader",
+            "reference": {
+                "name": "loader",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "disableCaching": false,
+                "paths": [
+                    "{\"Ext\":\".\",\"Ext.ux\":\"../ux\"}"
+                ],
+                "designer|userClassName": "Loader3"
+            },
+            "designerId": "c3488bb3-a35b-405d-8143-c157f7fc8178"
+        }
+    ]
+}

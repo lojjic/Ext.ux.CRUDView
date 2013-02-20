@@ -1,0 +1,45 @@
+.x-form-fieldset .x-field-invalid {
+    border-bottom: 0;
+}
+.x-field-invalid > .x-form-label {
+    color: #C00;
+}
+
+.x-field-error-msg {
+    padding: 0.3em 0.6em;
+    background: #FCC;
+    border: solid #FAA;
+    border-width: 1px 0;
+    color: #C00;
+    position: relative;
+}
+
+.x-field-error-msg::before {
+    content: '';
+    position: absolute;
+    left: 0.6em;
+    top: -18px;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom-color: #FAA;
+}
+.x-field-error-msg::after {
+    content: '';
+    position: absolute;
+    left: 0.6em;
+    top: -16px;
+    margin-left: 1px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #FCC;
+}
+
+.x-field-error-msg > .x-innerhtml {
+    font-size: 0.8em;
+}
+
+.crud-detail th, .crud-detail td {
+    width: 50%;
+}

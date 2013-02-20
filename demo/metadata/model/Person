@@ -1,0 +1,97 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Person"
+    },
+    "designerId": "68e862b4-b83f-4faf-abd3-e23cbeeeb8d8",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "designer|userClassName": "field"
+            },
+            "designerId": "9a40b104-722d-47d3-91ea-2318f97f3d0c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "age",
+                "type": "int",
+                "designer|userClassName": "field1"
+            },
+            "designerId": "c4a3afc7-838a-48c0-af14-c9440bd7c7b2"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "alive",
+                "type": "boolean",
+                "designer|userClassName": "field3"
+            },
+            "designerId": "eb5ead14-bb05-41fc-903d-bbbeef9c3b5f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "birthdate",
+                "type": "date",
+                "designer|userClassName": "field2"
+            },
+            "designerId": "a6e2cf2c-54c1-4b8f-97d1-62aeaec0416b"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPresenceValidation",
+                "designer|displayName": "name is required",
+                "field": "name"
+            },
+            "designerId": "eae9429b-7222-4437-adfc-d4b8f4215859"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPresenceValidation",
+                "designer|displayName": "age is required",
+                "field": "age"
+            },
+            "designerId": "4822465b-1e46-4f76-8d8c-bc845e9457f2"
+        }
+    ]
+}

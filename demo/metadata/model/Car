@@ -1,0 +1,69 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Car"
+    },
+    "designerId": "5813ef90-f474-4a74-bcbf-56012729ada8",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "model",
+                "designer|userClassName": "field4"
+            },
+            "designerId": "6e569bf3-bc03-4faa-9bc4-ecefd528f438"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "manufacturer",
+                "designer|userClassName": "field5"
+            },
+            "designerId": "bdaf80f6-c03f-40ec-b415-4c48e4948e9e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "price",
+                "designer|userClassName": "field6"
+            },
+            "designerId": "087d2dfb-fe1a-4bc3-90d5-a9af35ce7b99"
+        },
+        {
+            "type": "inclusionvalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyInclusionValidation",
+                "field": "manufacturer",
+                "list": [
+                    "['Audi', 'BMW', 'Nissan', 'Porsche']"
+                ]
+            },
+            "designerId": "5485745f-da3f-41fd-8ca6-ece6e2d5b403"
+        }
+    ]
+}

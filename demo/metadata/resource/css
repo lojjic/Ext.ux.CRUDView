@@ -1,0 +1,12 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "../resources/css/crudview.css"
+    },
+    "designerId": "e475b3f0-3f18-42f0-8e53-5ebbb68443a7"
+}
