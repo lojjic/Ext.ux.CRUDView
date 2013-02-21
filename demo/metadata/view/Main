@@ -1,0 +1,131 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "designer|userAlias": "topct",
+        "requires": [
+            "Ext.ux.CRUDView"
+        ],
+        "designer|initialView": true,
+        "layout": "fit"
+    },
+    "designerId": "6108b51b-e50d-4e62-97f5-46cded12ad27",
+    "cn": [
+        {
+            "type": "Ext.Component",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "store": "people",
+                "designer|userClassName": "MyComponent",
+                "designer|displayName": "crudview",
+                "designer|createAlias": "crudview"
+            },
+            "designerId": "32d20143-4452-4709-9ff7-44f64a362654",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "store",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.SegmentedButton",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "designer|userClassName": "MySegmentedButton",
+                "allowDepress": true
+            },
+            "designerId": "141088bf-37bf-43a6-92b1-c88ecb4ea8bd",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "pressed": true,
+                        "designer|userClassName": "MyButton",
+                        "text": "People"
+                    },
+                    "designerId": "3f486de1-6cde-4080-ba49-abcab0f79f9e",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "handler",
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "button.up('topct').child('crudview').setStore('people');"
+                                ]
+                            },
+                            "designerId": "f3bf90ea-7e37-4cf9-ae0b-e56eac33d57d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "designer|userClassName": "MyButton1",
+                        "text": "Cars"
+                    },
+                    "designerId": "0b652fda-c39b-41b4-81f5-f13d58a42698",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "handler",
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "button.up('topct').child('crudview').setStore('cars');"
+                                ]
+                            },
+                            "designerId": "1741417c-9ce9-405f-84c8-465acbcbf356"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
