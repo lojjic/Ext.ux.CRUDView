@@ -275,19 +275,21 @@ Ext.define('Ext.ux.CRUDView', {
         var me = this,
             store = me.getStore(),
             card = me.getActiveItem(),
-            tpl;
+            tpl, record;
         switch (card) {
             case me.getList():
-                return me.getStoreName() || store.getStoreId();
+                return me.getStoreName() || (store ? (store.getStoreId() || store.$className.split('.').pop()) : '') || '';
 
             case me.getDetail():
                 tpl = me.getDetailTitleTpl();
-                return tpl ? tpl.apply(card.getRecord().getData()) : '';
+                record = card.getRecord();
+                return (tpl && record) ? tpl.apply(record.getData()) : '';
 
             case me.getForm():
                 if (card.getRecord()) {
                     tpl = me.getEditTitleTpl();
-                    return tpl ? tpl.apply(card.getRecord().getData()) : '';
+                    record = card.getRecord();
+                    return (tpl && record) ? tpl.apply(record.getData()) : '';
                 } else {
                     return me.getAddTitle();
                 }
@@ -456,7 +458,7 @@ Ext.define('Ext.ux.CRUDView', {
             tpl;
 
         if (detail && store && modelFields && (!detail.getTpl() || detail.$crudGenerated)) {
-            tpl = ['<table class="crud-detail"><tbody>']
+            tpl = ['<table class="crud-detail"><tbody>'];
             modelFields.each(function(field) {
                 var name = field.getName();
                 if (name !== model.getIdProperty()) {
