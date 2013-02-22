@@ -258,7 +258,7 @@ Ext.define('Ext.ux.CRUDView', {
         // The default navigation bar impl caches the stack of titles, assuming they're
         // somewhat static. Since ours are more dynamic and depend on data records etc.,
         // we'll override getTitleText to handle dynamic values better.
-        navBar.getTitleText = me.getNavBarTitleText.bind(me);
+        navBar.getTitleText = Ext.Function.bind(me.getNavBarTitleText, me);
 
         navBar.add([
             me.getAddButton(),
@@ -326,7 +326,7 @@ Ext.define('Ext.ux.CRUDView', {
             if (!config.isTemplate) {
                 config = Ext.create('Ext.XTemplate', config);
             }
-            config.getRecordTitle = this.getTitleFieldValue.bind(this);
+            config.getRecordTitle = Ext.Function.bind(this.getTitleFieldValue, this);
         }
         return config;
     },
@@ -338,7 +338,7 @@ Ext.define('Ext.ux.CRUDView', {
     applyList: function(config) {
         var me = this,
             list = Ext.factory(config, 'Ext.dataview.List', me.getList());
-        list.getItemTpl().getRecordTitle = me.getTitleFieldValue.bind(me);
+        list.getItemTpl().getRecordTitle = Ext.Function.bind(me.getTitleFieldValue, me);
         list.setStore(me.getStore());
         return list;
     },
