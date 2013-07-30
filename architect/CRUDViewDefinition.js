@@ -30,14 +30,21 @@
             "defaultValue": null,
             "merge": false
         },
-        /*
         {
-            "name": "list",
-            "type": "Ext.dataview.List",
+            "name": "titleField",
+            "type": "string",
             "hidden": false,
             "defaultValue": null,
             "merge": false
         },
+        {
+            "name": "list",
+            "type": "object",
+            "hidden": false,
+            "defaultValue": "{\n    itemTpl: '{name}'\n}",
+            "merge": false
+        },
+        /*
         {
             "name": "detail",
             "type": "Ext.Component",
