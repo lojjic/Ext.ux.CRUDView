@@ -67,22 +67,20 @@
             "defaultValue": null,
             "merge": false
         },
-        /*
         {
             "name": "detailTitleTpl",
-            "type": "Ext.XTemplate",
+            "type": "template",
             "hidden": false,
             "defaultValue": null,
             "merge": false
         },
         {
             "name": "editTitleTpl",
-            "type": "Ext.XTemplate",
+            "type": "template",
             "hidden": false,
             "defaultValue": null,
             "merge": false
         },
-        */
         {
             "name": "fieldInvalidCls",
             "type": "string",
