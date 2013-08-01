@@ -1,0 +1,28 @@
+{
+    "name": "CRUDView",
+    "creator": "Jason Johnston",
+    "summary": "Got a store? Give it a CRUD interface.",
+    "detailedDescription": "A Sencha Touch 2 component which exposes a simple CRUD interface for a data store.",
+    "version": "1.0.0",
+    "compatVersion": "1.0.0",
+    "type": "code",
+    "architect": {
+        "compatFrameworks": [
+            "touch22",
+            "touch23"
+        ],
+        "classes": [
+            {
+                "className": "Ext.ux.CRUDView",
+                "definition": "CRUDViewDefinition.js",
+                "js": [
+                    "CRUDView.js"
+                ],
+                "css": [
+                    "crudview.css"
+                ]
+            }
+        ]
+    },
+    "local": true
+}

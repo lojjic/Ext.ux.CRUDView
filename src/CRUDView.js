@@ -483,8 +483,6 @@ Ext.define('Ext.ux.CRUDView', {
 
     },
 
-
-
     onActiveItemChange: function(navView, item) {
         var me = this;
         me.getAddButton()[item === me.getList() ? 'show' : 'hide']();
